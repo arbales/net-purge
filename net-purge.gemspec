@@ -24,7 +24,8 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/net-purge.rb"
+    "lib/net-purge.rb",
+    "net-purge.gemspec"
   ]
   s.homepage = %q{http://github.com/arbales/net-purge}
   s.licenses = ["MIT"]

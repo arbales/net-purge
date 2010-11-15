@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "net-purge"
   gem.homepage = "http://github.com/arbales/net-purge"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "Adds PURGE to net/http for cache-busting requests."
+  gem.description = "Adds PURGE to net/http for cache-busting requests in accelerators like Varnish and Squid."
   gem.email = "austin@odopod.com"
   gem.authors = ["Austin Robert Bales"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
@@ -26,19 +26,19 @@ Jeweler::Tasks.new do |gem|
 end
 Jeweler::RubygemsDotOrgTasks.new
 
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
+#require 'rake/testtask'
+#Rake::TestTask.new(:test) do |test|
+#  test.libs << 'lib' << 'test'
+#  test.pattern = 'test/**/test_*.rb'
+#  test.verbose = true
+#end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
+#require 'rcov/rcovtask'
+#Rcov::RcovTask.new do |test|
+#  test.libs << 'test'
+#  test.pattern = 'test/**/test_*.rb'
+#  test.verbose = true
+#end
 
 task :default => :test
 
